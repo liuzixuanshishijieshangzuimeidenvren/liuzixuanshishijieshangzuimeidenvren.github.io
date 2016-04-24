@@ -48,11 +48,14 @@
 			<br>
 			<br>
 			BUT I STILL WANT TO SAY:<br />
-			<span class="keyword">Baby, Shall we have dinner together next weekend?</span>
+			<span class="keyword">Xuan Mei, Shall we have dinner together next weekend?</span>
             <!--<span class="keyword">说这么多，我就想约你吃顿饭啊！</span>-->
 			<br />
-			<label><input name="yes" type="radio" value="1" checked onclick="show_fun(this)"/>Yes, my pleasure! </label> 
-            <label><input name="no" type="radio" value="2" onclick="show_fun(this)"/>No, I hate you! </label> 
+			<form name="editForm">
+			   <input name="yes" type="radio" value="1" checked onclick="show_fun(this)"/>Yes, my pleasure! 
+               <input name="no" type="radio" value="2" onclick="show_fun(this)"/>No, I hate you! 
+            </form>
+            <br />
 
 		</div>
 		<div id="loveHeart">
@@ -114,7 +117,7 @@ if (!document.createElement('canvas').getContext) {
 function show_fun($item){
 
      if ($item.value==2){
-     	alert("你的选择有误，请重新选择！");
+     	alert("你的选择严重有误，不符合我国政府倡导的以人为本的社会主义价值观，请重新选择！");
 
      }else{
      	alert("谢谢萱妹肯赏脸！我非常非常的荣幸！");
