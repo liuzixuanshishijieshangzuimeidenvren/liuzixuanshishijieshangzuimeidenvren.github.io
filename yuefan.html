@@ -118,10 +118,11 @@ function show_fun($item){
 
      if ($item.value==2){
      	alert("你的选择严重有误，不符合我国政府倡导的以人为本的社会主义价值观，请重新选择！");
-        $item.value=1;
+        var ans = document.getElementsByName("answer");
+        ans[0].checked = "checked";
      }else{
 
-     	alert("谢谢萱妹肯赏脸！我非常非常的荣幸！");
+     	alert("谢谢萱妹肯赏脸！我非常非常的荣幸！请微信告诉我吧！");
      }
      	
 
